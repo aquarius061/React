@@ -1,14 +1,12 @@
-const http = require('http');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+const obj1 = { 
+  apples: Array(5).fill('apple'),
+  pears: Array(4).fill('pear')
+};
+console.log('Init obj1 ');
+console.log(obj1);
+obj1.apples[2] = 'banana';
+obj2 =  obj1.apples.concat(Array(3).fill('monkey'))
+console.log('Changed obj1 ');
+console.log(obj1);
+console.log('Init obj2 ');
+console.log(obj2);

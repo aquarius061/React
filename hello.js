@@ -10,3 +10,4 @@ console.log('Changed obj1 ');
 console.log(obj1);
 console.log('Init obj2 ');
 console.log(obj2);
+process.exit(0);
